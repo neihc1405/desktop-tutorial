@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    >
+
+    <item
+        android:icon="@drawable/ic_baseline_alarm_24"
+        android:title="Báo thức"
+        android:id="@+id/mnBaothuc"
+
+        />
+
+    <item
+        android:icon="@drawable/ic_bamgio"
+        android:id="@+id/mnBamgio"
+        android:title="Bấm giờ"
+        />
+    <item
+        android:icon="@drawable/ic_hengio"
+        android:id="@+id/mnHengio"
+        android:title="Hẹn giờ"
+        />
+</menu>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity">
+
+    <Toolbar
+        android:id="@+id/toobar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/black"
+        android:title="Alarm"
+        android:titleTextColor="@color/black">
+
+        <TextView
+            android:layout_width="80dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:text="Alarm"
+            android:textColor="@color/white"
+            android:textSize="25dp" />
+        <ImageButton
+            android:id="@+id/imgcaidat"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="270dp"
+            android:backgroundTint="@color/black"
+
+            android:src="@drawable/ic_baseline_menu_24" />
+
+
+
+
+    </Toolbar>
+
+
+    <androidx.viewpager.widget.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/bottomnavigation"
+        android:layout_below="@+id/toobar" />
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottomnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/black"
+        app:itemTextColor="@color/custom_color_navigation"
+        app:menu="@menu/menualarm"
+        app:tabIconTint="@color/custom_color_navigation"
+
+        />
+
+</RelativeLayout>

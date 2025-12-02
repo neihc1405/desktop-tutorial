@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1A1A"
+    tools:context=".fragments.HengioFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <Button
+            android:id="@+id/button_set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@+id/button_start_pause"
+            android:layout_toStartOf="@+id/button_start_pause"
+            android:backgroundTint="@color/yellow"
+            android:text="set" />
+
+        <Button
+            android:id="@+id/button_start_pause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_countdown"
+            android:layout_centerHorizontal="true"
+            android:backgroundTint="@color/yellow"
+            android:text="start" />
+
+        <Button
+            android:id="@+id/button_reset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/text_view_countdown"
+            android:layout_toEndOf="@+id/button_start_pause"
+            android:text="reset"
+            android:visibility="invisible"
+            android:backgroundTint="@color/yellow"
+            tools:visibility="visible" />
+
+        <EditText
+            android:id="@+id/edit_text_input1"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_view_countdown"
+            android:layout_marginLeft="30dp"
+            android:hint="Hours"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <EditText
+            android:id="@+id/edit_text_input2"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_view_countdown"
+            android:layout_centerHorizontal="true"
+            android:layout_toRightOf="@+id/edit_text_input1"
+            android:hint="Minutes"
+            android:textColor="@color/white"
+            android:inputType="number"
+            android:maxLength="4" />
+
+        <EditText
+            android:id="@+id/edit_text_input3"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/text_view_countdown"
+            android:layout_toRightOf="@+id/edit_text_input2"
+            android:hint="Seconds"
+            android:inputType="number"
+            android:textColor="@color/white"
+            android:maxLength="4" />
+
+        <TextView
+            android:id="@+id/text_view_countdown"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:text="00:00"
+            android:textColor="@color/white"
+            android:textSize="60sp" />
+
+    </RelativeLayout>
+</FrameLayout>

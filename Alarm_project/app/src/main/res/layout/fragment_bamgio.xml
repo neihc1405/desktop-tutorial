@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1B1A1A"
+    tools:context=".fragments.BamgioFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btnStart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTimer"
+            android:layout_marginLeft="75dp"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/yellow"
+            android:text="START" />
+
+        <Button
+            android:id="@+id/btnPause"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTimer"
+            android:layout_marginTop="20dp"
+            android:layout_toRightOf="@+id/btnStart"
+            android:backgroundTint="@color/yellow"
+            android:text="PAUSE" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtTimer"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/yellow"
+            android:layout_toRightOf="@+id/btnPause"
+            android:text="RESET" />
+
+        <!--<Button-->
+
+
+        <!--android:layout_width="wrap_content"-->
+
+
+        <!--android:layout_height="wrap_content"-->
+
+
+        <!--android:text="STOP"-->
+
+
+        <!--android:id="@+id/btnStop"-->
+
+
+        <!--android:layout_marginTop="20dp"-->
+
+
+        <!--android:layout_below="@+id/txtTimer"-->
+
+
+        <!--android:layout_marginRight="10dp"-->
+
+
+        <!--android:layout_toRightOf="@+id/btnPause"-->
+
+
+        <!--/>-->
+
+
+        <TextView
+            android:id="@+id/txtTimer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="120dp"
+            android:textColor="@color/white"
+            android:text="00:00:00"
+            android:textSize="60dp" />
+    </RelativeLayout>
+
+</FrameLayout>

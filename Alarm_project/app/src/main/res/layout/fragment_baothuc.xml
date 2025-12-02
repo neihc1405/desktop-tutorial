@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/black"
+    tools:context=".fragments.BaothucFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recycleview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#1B1A1A"
+        app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager" />
+
+    <ImageButton
+        android:id="@+id/btAdd"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="580dp"
+        android:backgroundTint="@android:color/transparent"
+        android:src="@drawable/ic_baseline_add_alarm_24" />
+
+
+
+</FrameLayout>
